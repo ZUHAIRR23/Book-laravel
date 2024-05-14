@@ -46,7 +46,7 @@ class BookController extends Controller
             'edition' => 'required',
             'publishing' => 'required',
             'isbn' => 'required',
-            'image' => 'required|image|mimes:jpg,png,jpeg',
+            'image' => 'required|image|mimes:jpg,png,jpeg|max:2048',
             'pdf' => 'required|mimes:pdf'
         ]);
         try {
